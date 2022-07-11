@@ -1,0 +1,22 @@
+.button {
+	border-radius: 5px;
+	background-color: #83008F;
+	color: white;
+	font-size: 1em;
+	padding-left: 10px;
+	text-align: left;
+	border: 3px solid red;
+	height: 40px;
+	grid-column-start: 1;
+}
+
+.button:hover {
+	opacity: 80%;
+}
+
+.video {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-rows: repeat(auto-fit, 1fr);
+	grid-template-columns: 20% 1fr;
+}
