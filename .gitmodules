@@ -1,0 +1,3 @@
+[submodule "cool-button-tailwind/tailwind-yew-builder"]
+	path = cool-button-tailwind/tailwind-yew-builder
+	url = https://github.com/matiu2/tailwind-yew-builder.git

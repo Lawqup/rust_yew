@@ -1,0 +1,22 @@
+[package]
+name = "ripple-button"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+yew = "0.19"
+wasm-bindgen = "0.2.81"
+js-sys = "0.3.58"
+
+[dependencies.web-sys]
+version = "0.3.4"
+features = [
+  'CssStyleDeclaration',
+  'Document',
+  'Element',
+  'EventTarget',
+  'HtmlElement',
+  'MouseEvent',
+  'Node',
+  'Window',
+]

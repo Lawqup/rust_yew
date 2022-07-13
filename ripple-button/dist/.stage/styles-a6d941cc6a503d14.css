@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=JetBrains Mono');
+
+* {
+	font-family: JetBrains Mono;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+	min-height: 100vh;
+}
+
+#ripple-button {
+	color: #fff;
+	border-radius: 40px;
+	border: 0;
+	font-size: 30px;
+	padding: 30px 60px;
+	margin: 10px 0;
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(45deg,blue,red);
+}
+
+#ripple {
+	border-radius: 50%;
+	position: absolute;
+	background: #fff;
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+	animation: expand_fade 0.5s linear;
+}
+@keyframes expand_fade {
+	0% {
+		width: 0px;
+		height: 0px;
+		opacity: 50%;
+	}
+	100% {
+		width: 400px;
+		height: 400px;
+		opacity: 0%;
+	}
+}
+
